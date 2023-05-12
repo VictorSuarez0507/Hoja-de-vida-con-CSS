@@ -1,0 +1,182 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contenedor{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.contenedor .izquierda{
+    position: relative;
+    background: rgb(199, 254, 199);
+    padding: 40px;
+
+}
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(249, 248, 246);
+}
+.perfil .foto{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.perfil .foto img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfil h2{
+    color: rgb(42, 41, 41);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 2em;
+}
+.perfil span{
+    font-size: 1em;
+    font-weight: 100;
+    color: rgb(42, 41, 41);
+}
+.datosDeContacto{
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(249, 248, 246)
+}
+.informacion{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+.datosDeContacto ul li{
+    position: relative;
+    list-style: none;
+    color: rgb(42, 41, 41);
+    margin: 10px 0;
+    cursor: pointer;
+}
+.datosDeContacto ul li .icono{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+}
+.datosDeContacto ul li span a{
+    display: inline-block;
+    color: rgb(42, 41, 41);
+    text-decoration: none;
+}
+.competencia{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+.datosDeContacto.habilidades li{
+    color: rgb(42, 41, 41);
+    margin-bottom: 10px;
+}
+.otrasCompetencia{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+.datosDeContacto.tecnica .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(249, 248, 246);
+    display: block;
+    margin-top: 5px;
+}
+.datosDeContacto.tecnica .porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: green;
+}
+
+.contenedor .derecha{
+    position: relative;
+    background: rgb(249, 248, 246);
+    padding: 40px;
+}
+.perfilProfesional{
+    margin-bottom: 50px;
+}
+.perfilProfesional:last-child{
+    margin-bottom: 0;
+}
+.resumen{
+    color:black ;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 550;
+    font-size: 20px;
+}
+p{
+    color:rgb(42, 41, 41);
+    text-align: left;
+}
+.perfilProfesional .experiencia{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.perfilProfesional .experiencia .empresa{
+    min-width: 150px;
+}
+.perfilProfesional .experiencia .empresa h4{
+    text-transform: uppercase;
+    color:rgb(42, 41, 41);
+    font-weight: 550;
+}
+.perfilProfesional .experiencia .empresa h5{
+    color:rgb(42, 41, 41);
+    font-weight: 530;
+    margin-top: 5px;
+}
+.perfilProfesional .experiencia .parrafo h4{
+    color: rgb(42, 41, 41);
+    font-weight: 550;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.hobbies{
+    display: flex;
+    flex-direction: row;
+}
+.perfilProfesional .hobbies img{
+    margin-right: 20px;
+}
